@@ -60,7 +60,7 @@ footer a:hover {
     "navArea navArea navArea"
     "heroArea heroArea heroArea"
     ". threeCardsArea ."
-    ". gallery1Area ."
+    ". galleryArea ."
     ". twoCardsArea ."
     "footerArea footerArea footerArea"
 }
@@ -77,8 +77,8 @@ nav {
   grid-area: threeCardsArea;
 }
 
-#gallery1 {
-  grid-area: gallery1Area;
+#gallery {
+  grid-area: galleryArea;
 }
 
 #twoCards {
@@ -206,7 +206,41 @@ nav h2 {
 /****************************************************************************
   Gallery styles
 ****************************************************************************/
+#gallery {
+  text-align: center;
+}
 
+#gallery1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#gallery1 img {
+  width: 100%
+}
+
+#gallery2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#gallery2 img {
+  height: 266.6px
+  width: 266.6px
+  object-fit: cover;
+}
+
+#gallery3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#gallery3 img {
+  height: 200px;
+  margin: 12px;
+  flex: 1 0 auto;
+  object-fit: cover;
+}
 /****************************************************************************
   Media Query - Mobile Breakpoint
 ****************************************************************************/
@@ -217,7 +251,7 @@ nav h2 {
     "navArea"
     "heroArea"
     "threeCardsArea"
-    "gallery1Area"
+    "galleryArea"
     "twoCardsArea"
     "footerArea"
   }
