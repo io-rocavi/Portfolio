@@ -60,13 +60,13 @@ footer a:hover {
     "navArea navArea navArea"
     "heroArea heroArea heroArea"
     ". threeCardsArea ."
-    ". galleryArea ."
+    ". gallery1Area ."
     ". twoCardsArea ."
     "footerArea footerArea footerArea"
 }
 
 nav {
-  grid-area: nav-area;
+  grid-area: navArea;
 }
 
 #hero {
@@ -156,14 +156,15 @@ nav h2 {
   background-attachment: fixed;
 }
 
-#hero4{
+#hero h1,
+#hero h4 {
   color: white;
 }
 /****************************************************************************
   Card styles
 ****************************************************************************/
 #hero a,
-.Card a {
+.card a {
   background-color: white;
   color: indigo;
   border: 2px solid indigo;
