@@ -241,6 +241,28 @@ nav h2 {
   flex: 1 0 auto;
   object-fit: cover;
 }
+
+#gallery4 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 1200px;
+}
+
+#gallery4 img {
+  width: 30%;
+  margin: 12px;
+}
+
+#gallery5 {
+  columns: 3 auto;
+}
+
+#gallery5 img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
 /****************************************************************************
   Media Query - Mobile Breakpoint
 ****************************************************************************/
@@ -261,5 +283,22 @@ nav h2 {
   #threeCards,
   #twoCards{
     flex-direction: column;
+  }
+  #gallery1,
+  #gallery2 {
+    grid-template-columns: 1fr;
+  }
+
+  #gallery2 img {
+    width: 100px;
+    height: auto;
+  }
+
+  #gallery4 img {
+    width: 45%
+  }
+
+  #gallery5 {
+    columns: 2 auto
   }
 }
