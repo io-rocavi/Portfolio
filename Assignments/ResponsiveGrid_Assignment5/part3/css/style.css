@@ -216,7 +216,7 @@ nav h2 {
 }
 
 #gallery1 img {
-  width: 100%
+  width: 100%;
 }
 
 #gallery2 {
@@ -225,8 +225,8 @@ nav h2 {
 }
 
 #gallery2 img {
-  height: 266.6px
-  width: 266.6px
+  height: 266.6px;
+  width: 266.6px;
   object-fit: cover;
 }
 
@@ -295,7 +295,7 @@ nav h2 {
   }
 
   #gallery4 img {
-    width: 45%
+    width: 45%;
   }
 
   #gallery5 {
