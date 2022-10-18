@@ -7,7 +7,7 @@
         margin: 0;
       }
       #room {
-        border: 5px; solid black;
+        border: 5px solid black;
         position: relative;
       }
       #ball {
@@ -47,8 +47,7 @@
       let gravity = 0.3;
 
       function moveBall() {
-        ballYSpeed += gravity;
-
+      //  ballYSpeed += gravity;
         ballX += ballXSpeed;
         ballY += ballYSpeed;
 
@@ -69,7 +68,10 @@
 
         ball.style.left = ballX + 'px';
         ball.style.top = ballY + 'px';
+
       }
+
+      setInterval(moveball, 10);
     </script>
 
   </body>
