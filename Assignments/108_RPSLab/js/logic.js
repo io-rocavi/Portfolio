@@ -48,7 +48,7 @@ function playGame(yourPick) {
   let rockLeft = document.getElementById("rockLeft");
   let paperLeft = document.getElementById("paperLeft");
   let scissorsLeft = document.getElementById("scissorsLeft");
-  let rockRight = document.getElementById("rockLeft");
+  let rockRight = document.getElementById("rockRight");
   let paperRight = document.getElementById("paperRight");
   let scissorsRight = document.getElementById("scissorsRight");
 
@@ -92,7 +92,7 @@ function setUp() {
   };
 
   let closers = document.querySelectorAll(".closer");
-  for (let i = 0; i closers.length; i++) {
+  for (let i = 0; i < closers.length; i++) {
     let closer = closers[i];
     closer.onclick = function() {
       let popupContainer = document.getElementById("popupContainer");
@@ -127,7 +127,7 @@ function resetGame() {
   result.innerHTML = "";
 }
 
-fucntion popAndPlay(yourPick) {
+function popAndPlay(yourPick) {
   let popupContainer = document.getElementById("popupContainer");
   let game = document.getElementById("game")
 
